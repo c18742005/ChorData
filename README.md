@@ -53,16 +53,15 @@ Ensure you have all the installation requirements above before continuing with t
 6. Open the db.sql file located in the ~/chosen-directory/ChorData-main/chordata-backend directory in a code editor of your choice and copy its contents
 7. In the open terminal instance, paste the copied contents from the step above and press 'Enter' to create the database
 8. Open the .env file located in the ~/chosen-directory/ChorData-main/chordata-backend directory in a code editor of your choice (Warning: This file may be hidden by your OS by default. Ensure your hidden files are viewable in order to see this file)
-9. Replace the DATABASE_URL variable using the following format: `postgres://username:password@localhost:5432/chordata` where username and password are the credentials you used to login to PSQL
+9. Replace the DATABASE_URL variable using the following format: `postgres://username:password@localhost:5432/chordata` where username and password are the credentials you used to login to PSQL. If you did not set a password use `postgres://username@localhost:5432/chordata` instead
 
 ### Installing Node and Setting up the Backend
 
 1. Download and install NodeJS and NPM using the official documentation [here](https://nodejs.org/en/download/) (Warning: System may need to be restarted to ensure correct installation)
 2. Once installed, open a new terminal instance and navigate to the ~/chosen-directory/ChorData-main/chordata-backend directory
 3. Run `npm install` to install all required dependencies
-4. Once the above has finished, run `npm test` to test the setup so far and ensure it has been done correctly`
-5. Once all tests have passed, run `npm run dev` to run the development environment
-6. Keep this terminal open and running for the duration of development
+4. Once the above has finished, execute `npm run dev` in the terminal to run the development environment
+5. Keep this terminal open and running for the duration of development
 
 ### Installing React and Setting up the Frontend
 
@@ -70,7 +69,8 @@ Ensure you have all the installation requirements above before continuing with t
 2. Run `npm install` to install the required dependencies
 3. Run the command `npm run start:dev` to run the frontend in development mode
 4. Open a browser and type in the url: `http://localhost:3000/`. This should navigate you to the login page. (After running the above command, a tab may be opened automatically for you)
-5. The following 2 accounts are set up to allow you to sample the system:
+5. Keep this terminal open and running for the duration of development
+6. The following 2 accounts are set up to allow you to sample the system:
 
 <bold>Vet account</bold>
 
