@@ -39,6 +39,9 @@ The purpose behind the project is to reduce the need for physical storage of vet
 
 Ensure you have all the installation requirements above before continuing with the installation
 
+- Download the zipped folder from GitHub
+- Unzip the downloaded file to a directory of your choosing (Referred to as ~/chosen-directory/ for the remainder of this document)
+
 ### Installing Postgres and Setting up the Database
 
 1. Download and install PostgreSQL and the PSQL command line tools using the official download [here](https://www.postgresql.org/download/) (Warning: System may need to be restarted to ensure correct installation)
@@ -46,15 +49,15 @@ Ensure you have all the installation requirements above before continuing with t
 3. To create the ChorData database type the command `CREATE DATABASE chordata;`
 4. Enter the command `\l` and ensure the chordata database is listed
 5. To connect to the database use the command `\c chordata`
-6. Open the .sql file located in the /chordata-backend directory and copy its contents
+6. Open the .sql file located in the ~/chosen-directory/ChorData/chordata-backend directory and copy its contents
 7. In the open terminal instance, paste the copied contents from the step above and press 'Enter' to create the database
-8. Open the .env file located in the /chordata-backend directory (Warning: This file may be hidden. Ensure your hidden files are viewable in order to see this file)
+8. Open the .env file located in the ~/chosen-directory/ChorData/chordata-backend directory (Warning: This file may be hidden. Ensure your hidden files are viewable in order to see this file)
 9. Replace the DATABASE_URL variable using the following format: `postgres://username:password@localhost:5432/chordata` where username and password are the credentials used to login to PSQL
 
 ### Installing Node and Setting up the Backend
 
 1. Download and install NodeJS and NPM using the official documentation [here](https://nodejs.org/en/download/) (Warning: System may need to be restarted to ensure correct installation)
-2. Once installed, open a new terminal instance and navigate to the /chordata-backend directory
+2. Once installed, open a new terminal instance and navigate to the ~/chosen-directory/ChorData/chordata-backend directory
 3. Run `npm install` to install all required dependencies
 4. Once the above has finished, run `npm test to test the setup so far and ensure it has been done correctly`
 5. Once all tests have passed, run `npm run dev` to run the development environment
@@ -62,7 +65,7 @@ Ensure you have all the installation requirements above before continuing with t
 
 ### Installing React and Setting up the Frontend
 
-1. Open a new terminal and navigate to the /chordata-client directory and run `npm install` to install the required dependencies
+1. Open a new terminal and navigate to the ~/chosen-directory/ChorData/chordata-client directory and run `npm install` to install the required dependencies
 2. Once the above has finished, run `npm test` to test the setup is correct so far
 3. Once all tests passed enter `q` to exit the testing watch mode
 4. Run the command `npm run start:dev` to run the frontend in development mode
@@ -82,7 +85,7 @@ Ensure you have all the installation requirements above before continuing with t
 ## Tests
 
 - Follow the installation instructions above
-- Open the chordata-backend directory `cd /chordata-client`
+- Open the chordata-backend directory `cd ~/chosen-directory/ChorData/chordata-backend`
 - Run `npm test`
 - All unit tests should pass outlining successful setup
 
