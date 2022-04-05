@@ -59,7 +59,7 @@ Ensure you have all the installation requirements above before continuing with t
 1. Download and install NodeJS and NPM using the official documentation [here](https://nodejs.org/en/download/) (Warning: System may need to be restarted to ensure correct installation)
 2. Once installed, open a new terminal instance and navigate to the ~/chosen-directory/ChorData/chordata-backend directory
 3. Run `npm install` to install all required dependencies
-4. Once the above has finished, run `npm test to test the setup so far and ensure it has been done correctly`
+4. Once the above has finished, run `npm test` to test the setup so far and ensure it has been done correctly`
 5. Once all tests have passed, run `npm run dev` to run the development environment
 6. Keep this terminal open and running for the duration of development
 
