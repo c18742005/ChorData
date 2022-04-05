@@ -32,11 +32,9 @@ The purpose behind the project is to reduce the need for physical storage of vet
 
 ## Installation Requirements
 
-- [React](https://reactjs.org) - For the frontend
-- [Node](https://nodejs.org/en/) - For npm
-- [Express](https://expressjs.com) - For the backend API
 - Code editor of your choice
-- [PostgreSQL & PSQL](https://www.postgresql.org) - For the database
+- [Node](https://nodejs.org/en/download/) - For npm
+- [PostgreSQL & PSQL](https://www.postgresql.org/download/) - For the database
 
 ## Installation
 
@@ -86,10 +84,20 @@ Ensure you have all the installation requirements above before continuing with t
 
 ## Tests
 
+### Backend Tests
+
 - Follow the installation instructions above
-- Open the chordata-backend directory `cd ~/chosen-directory/ChorData-main/chordata-backend`
+- Open a terminal instance and navigate to the chordata-backend directory `cd ~/chosen-directory/ChorData-main/chordata-backend`
 - Run `npm test`
-- All tests should pass outlining successful setup
+- All tests should pass outlining successful setup of the backend
+
+### Frontend Tests
+
+- Follow the installation instructions above
+- Open a terminal instance and navigate to the chordata-backend directory `cd ~/chosen-directory/ChorData-main/chordata-frontend`
+- Run `npm test`
+- All tests should pass outlining successful setup of the backend
+- Press `q` to stop watching for tests
 
 ## How to use?
 
