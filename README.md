@@ -12,15 +12,14 @@ The purpose behind the project is to reduce the need for physical storage of vet
 
 <b>Built with</b>
 
-- [React] (https://reactjs.org)
-- [Node] (https://nodejs.org/en/)
-- [Express] (https://expressjs.com)
-- [Visual Studio Code] (https://code.visualstudio.com)
-- [PostgreSQL] (https://www.postgresql.org)
-- [PSQL] ()
-- [Render] (https://render.com)
-- [Jest] (https://jestjs.io)
-- [Figma] (https://www.figma.com)
+- [React](https://reactjs.org)
+- [Node](https://nodejs.org/en/)
+- [Express](https://expressjs.com)
+- [Visual Studio Code](https://code.visualstudio.com)
+- [PostgreSQL & PSQL](https://www.postgresql.org)
+- [Render](https://render.com)
+- [Jest](https://jestjs.io)
+- [Figma](https://www.figma.com)
 
 ## Features
 
@@ -30,11 +29,11 @@ The purpose behind the project is to reduce the need for physical storage of vet
 
 ## Installation Requirements
 
-- [React] (https://reactjs.org) - For the frontend
-- [Node] (https://nodejs.org/en/) - For npm
-- [Express] (https://expressjs.com) - For the backend API
+- [React](https://reactjs.org) - For the frontend
+- [Node](https://nodejs.org/en/) - For npm
+- [Express](https://expressjs.com) - For the backend API
 - Code editor of your choice
-- [PostgreSQL] (https://www.postgresql.org) - For the database
+- [PostgreSQL & PSQL](https://www.postgresql.org) - For the database
 
 ## Installation
 
