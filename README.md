@@ -26,6 +26,9 @@ The purpose behind the project is to reduce the need for physical storage of vet
 - Veterinary Controlled Drug Register
 - Canine & Feline Dental Record Log
 - X-ray Exposure Log
+- Add/Edit/Deactivate Clients
+- Add/Edit/Deactivate Patients
+- View Patient Procedures
 
 ## Installation Requirements
 
@@ -45,19 +48,19 @@ Ensure you have all the installation requirements above before continuing with t
 ### Installing Postgres and Setting up the Database
 
 1. Download and install PostgreSQL and the PSQL command line tools using the official download [here](https://www.postgresql.org/download/) (Warning: System may need to be restarted to ensure correct installation)
-2. Once installed, open a terminal and type the command `psql -U your-username` replacing your username with the username used when setting up Postgres
+2. Once installed, open a terminal and type the command `psql -U your-username` replacing your-username with the username used when setting up Postgres
 3. To create the ChorData database type the command `CREATE DATABASE chordata;`
 4. Enter the command `\l` and ensure the chordata database is listed
 5. To connect to the database use the command `\c chordata`
-6. Open the .sql file located in the ~/chosen-directory/ChorData/chordata-backend directory and copy its contents
+6. Open the db.sql file located in the ~/chosen-directory/ChorData-main/chordata-backend directory in a code editor of your choice and copy its contents
 7. In the open terminal instance, paste the copied contents from the step above and press 'Enter' to create the database
-8. Open the .env file located in the ~/chosen-directory/ChorData/chordata-backend directory (Warning: This file may be hidden. Ensure your hidden files are viewable in order to see this file)
-9. Replace the DATABASE_URL variable using the following format: `postgres://username:password@localhost:5432/chordata` where username and password are the credentials used to login to PSQL
+8. Open the .env file located in the ~/chosen-directory/ChorData-main/chordata-backend directory in a code editor of your choice (Warning: This file may be hidden by your OS by default. Ensure your hidden files are viewable in order to see this file)
+9. Replace the DATABASE_URL variable using the following format: `postgres://username:password@localhost:5432/chordata` where username and password are the credentials you used to login to PSQL
 
 ### Installing Node and Setting up the Backend
 
 1. Download and install NodeJS and NPM using the official documentation [here](https://nodejs.org/en/download/) (Warning: System may need to be restarted to ensure correct installation)
-2. Once installed, open a new terminal instance and navigate to the ~/chosen-directory/ChorData/chordata-backend directory
+2. Once installed, open a new terminal instance and navigate to the ~/chosen-directory/ChorData-main/chordata-backend directory
 3. Run `npm install` to install all required dependencies
 4. Once the above has finished, run `npm test` to test the setup so far and ensure it has been done correctly`
 5. Once all tests have passed, run `npm run dev` to run the development environment
@@ -65,12 +68,11 @@ Ensure you have all the installation requirements above before continuing with t
 
 ### Installing React and Setting up the Frontend
 
-1. Open a new terminal and navigate to the ~/chosen-directory/ChorData/chordata-client directory and run `npm install` to install the required dependencies
-2. Once the above has finished, run `npm test` to test the setup is correct so far
-3. Once all tests passed enter `q` to exit the testing watch mode
-4. Run the command `npm run start:dev` to run the frontend in development mode
-5. Open a browser and type in the url: `http://localhost:3000/`. This should navigate you to the login page
-6. The following 2 accounts are set up to allow you to sample the system:
+1. Open a new terminal and navigate to the ~/chosen-directory/ChorData-main/chordata-client directory
+2. Run `npm install` to install the required dependencies
+3. Run the command `npm run start:dev` to run the frontend in development mode
+4. Open a browser and type in the url: `http://localhost:3000/`. This should navigate you to the login page. (After running the above command, a tab may be opened automatically for you)
+5. The following 2 accounts are set up to allow you to sample the system:
 
 <bold>Vet account</bold>
 
@@ -85,9 +87,9 @@ Ensure you have all the installation requirements above before continuing with t
 ## Tests
 
 - Follow the installation instructions above
-- Open the chordata-backend directory `cd ~/chosen-directory/ChorData/chordata-backend`
+- Open the chordata-backend directory `cd ~/chosen-directory/ChorData-main/chordata-backend`
 - Run `npm test`
-- All unit tests should pass outlining successful setup
+- All tests should pass outlining successful setup
 
 ## How to use?
 
