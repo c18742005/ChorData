@@ -1,34 +1,8 @@
-## Project title
+## Chordata - A Controlled Drug Register and Veterinary Practice Management Web Application
 
 The goal of this project is to provide an easy to use, accessible, and secure web application that will allow veterinary practices to manage and track their controlled drugs, cremations, and dentals. The development of this application will make use of the Feature Driven Development methodology in each step of the development process from ideation up to and including project release.
 
 The purpose behind the project is to reduce the need for physical storage of veterinary data by offering an electronic means of storage while also reducing the time veterinary professionals spend doing manual tasks that can easily be automated freeing up their time so they can do what they do best - caring for our pets.
-
-## Code style
-
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-
-## Tech/framework used
-
-<b>Built with</b>
-
-- [React](https://reactjs.org)
-- [Node](https://nodejs.org/en/)
-- [Express](https://expressjs.com)
-- [Visual Studio Code](https://code.visualstudio.com)
-- [PostgreSQL & PSQL](https://www.postgresql.org)
-- [Render](https://render.com)
-- [Jest](https://jestjs.io)
-- [Figma](https://www.figma.com)
-
-## Features
-
-- Veterinary Controlled Drug Register
-- Canine & Feline Dental Record Log
-- X-ray Exposure Log
-- Add/Edit/Deactivate Clients
-- Add/Edit/Deactivate Patients
-- View Patient Procedures
 
 ## Installation Requirements
 
@@ -55,61 +29,73 @@ Ensure you have all the installation requirements above before continuing with t
 7. In the open terminal instance, paste the copied contents from the step above, wait until the code has finished loading, and press 'Enter' to create the database
 8. Open the .env file located in the ~/chosen-directory/ChorData/chordata-backend directory in a code editor of your choice (Warning: This file may be hidden by your OS by default. Ensure your hidden files are viewable in order to see this file)
 9. Replace the DATABASE_URL variable using the following format: `postgres://username:password@localhost:5432/chordata` where username and password are the credentials you use to login to PSQL. If you did not set a password use `postgres://username@localhost:5432/chordata` instead where username is the username used to login to PSQL
+10. Once the above instructions are completed, this terminal can be closed
 
 ### Installing Node and Setting up the Backend
 
 1. Download and install NodeJS and NPM using the official documentation [here](https://nodejs.org/en/download/) (Warning: System may need to be restarted to ensure correct installation)
 2. Once installed, open a new terminal instance and navigate to the ~/chosen-directory/ChorData/chordata-backend directory
 3. Run `npm install` to install all required dependencies
-4. Once the above has finished, execute `npm run dev` in the terminal to run the development environment
-5. Keep this terminal open and running for the duration of development
+4. (OPTIONAL) Run `npm test`. All tests should pass outlining successful setup of the backend
+5. Once the above has finished, execute `npm run dev` in the terminal to run the development environment
+6. Keep this terminal open and running for the duration of development
 
 ### Installing React and Setting up the Frontend
 
 1. Open a new terminal and navigate to the ~/chosen-directory/ChorData/chordata-client directory
 2. Run `npm install` to install the required dependencies
-3. Run the command `npm run start:dev` to run the frontend in development mode
-4. Open a browser and type in the url: `http://localhost:3000/`. This should navigate you to the login page. (After running the above command, a tab may be opened automatically for you)
-5. Keep this terminal open and running for the duration of development
-6. The following 2 accounts are set up to allow you to sample the system:
+3. (OPTIONAL) Run `npm test`. All tests should pass outlining successful setup of the frontend. Press `q` to stop watching tests
+4. Run the command `npm run start:dev` to run the frontend in development mode
+5. Open a browser and type in the url: `http://localhost:3000/`. This should navigate you to the login page. (After running the above command, a tab may be opened automatically for you)
+6. Keep this terminal open and running for the duration of development
+7. The following 2 accounts are set up to allow you to sample the system:
 
-<bold>Vet account</bold>
+<b>Vet account</b>
 
 - Username: vet.user
 - Password: P@ssword1
 
-<bold>Nurse account</bold>
+<b>Nurse account</b>
 
 - Username: nurse.user
 - Password: vet.user
 
-## Tests
+## Code style
 
-### Backend Tests
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-Warning: This should be run before any changes are made to the application through the accounts above
+## Tech/framework used
 
-- Follow the installation instructions above
-- Open a terminal instance and navigate to the chordata-backend directory `cd ~/chosen-directory/ChorData/chordata-backend`
-- Run `npm test`
-- All tests should pass outlining successful setup of the backend
+<b>Built with</b>
 
-### Frontend Tests
+- [React](https://reactjs.org)
+- [Node](https://nodejs.org/en/)
+- [Express](https://expressjs.com)
+- [GIT](https://git-scm.com)
+- [Visual Studio Code](https://code.visualstudio.com)
+- [PostgreSQL & PSQL](https://www.postgresql.org)
+- [Render](https://render.com)
+- [GitHub](https://github.com)
+- [Jest](https://jestjs.io)
+- [Figma](https://www.figma.com)
 
-- Follow the installation instructions above
-- Open a terminal instance and navigate to the chordata-backend directory `cd ~/chosen-directory/ChorData/chordata-frontend`
-- Run `npm test`
-- All tests should pass outlining successful setup of the backend
-- Press `q` to stop watching tests
+## Features
+
+- Veterinary Controlled Drug Register
+- Canine & Feline Dental Record Log
+- X-ray Exposure Log
+- Add/Edit/Deactivate Clients
+- Add/Edit/Deactivate Patients
+- View Patient Procedures
 
 ## How to use?
 
-To login as a vet:
+<b>To login as a vet:</b>
 
 - Username: vet.user
 - Password: P@ssword1
 
-To login as a nurse:
+<b>To login as a nurse:</b>
 
 - Username: nurse.user
 - Password: ChorD@t@1
