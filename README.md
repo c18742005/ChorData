@@ -60,6 +60,25 @@ Ensure you have all the installation requirements above before continuing with t
 - Username: nurse.user
 - Password: vet.user
 
+## How to use the deployed version?
+
+The application is deployed using [Render](https://render.com)'s hosting services. The application can be accessed at the following link https://chordata.onrender.com
+
+<b>To login as a vet:</b>
+
+- Username: vet.user
+- Password: P@ssword1
+
+<b>To login as a nurse:</b>
+
+- Username: nurse.user
+- Password: ChorD@t@1
+
+Features can be trialed and tested with the two above accounts. Alternatively new users can be created using one of the following Clinic ID's on the register page giving access to two separate example clinics:
+
+- 292a485f-a56a-4938-8f1a-bbbbbbbbbbb1
+- 292a485f-a56a-4938-8f1a-bbbbbbbbbbb2
+
 ## Code style
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
@@ -87,20 +106,6 @@ Ensure you have all the installation requirements above before continuing with t
 - Add/Edit/Deactivate Clients
 - Add/Edit/Deactivate Patients
 - View Patient Procedures
-
-## How to use?
-
-<b>To login as a vet:</b>
-
-- Username: vet.user
-- Password: P@ssword1
-
-<b>To login as a nurse:</b>
-
-- Username: nurse.user
-- Password: ChorD@t@1
-
-Features can be trialed and tested with these two accounts
 
 ## License
 
