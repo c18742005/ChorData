@@ -44,11 +44,10 @@ Ensure you have all the installation requirements above before continuing with t
 
 1. Open a new terminal and navigate to the ~/chosen-directory/ChorData/chordata-client directory
 2. Run `npm install` to install the required dependencies
-3. (OPTIONAL) Run `npm test`. All tests should pass outlining successful setup of the frontend. Press `q` to stop watching tests
-4. Run the command `npm run start:dev` to run the frontend in development mode
-5. Open a browser and type in the url: `http://localhost:3000/`. This should navigate you to the login page. (After running the above command, a tab may be opened automatically for you)
-6. Keep this terminal open and running for the duration of development
-7. The following 2 accounts are set up to allow you to sample the system:
+3. Run the command `npm run start:dev` to run the frontend in development mode
+4. Open a browser and type in the url: `http://localhost:3000/`. This should navigate you to the login page. (After running the above command, a tab may be opened automatically for you)
+5. Keep this terminal open and running for the duration of development
+6. The following 2 accounts are set up to allow you to sample the system:
 
 <b>Vet account</b>
 
