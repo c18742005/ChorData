@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faCross,
-  faInfoCircle, 
+  faHeartPulse,
   faPills, 
   faRadiation, 
   faTooth, 
@@ -29,38 +29,38 @@ const Dashboard = () => {
             image={<FontAwesomeIcon icon={faUsers} size='6x'/>} 
           />
         </Link>
-        <Link to="/cremations" style={linkStyle}>
-          <DashboardCard 
-             title="Cremations" 
-             image={<FontAwesomeIcon icon={faCross} size='6x' />} 
-          />
-        </Link>
-      </Box>
-      <Box align="center" justify="center" fill gap="medium">
-        <Link to="/drugs" style={linkStyle}>
-          <DashboardCard 
-            title="Drug Record" 
-            image={<FontAwesomeIcon icon={faPills} size='6x' />} 
-          />
-        </Link>
-        <Link to="/xrays" style={linkStyle}>
-          <DashboardCard 
-            title="X-Ray Exposure" 
-            image={<FontAwesomeIcon icon={faRadiation} size='6x' />} 
-          />
-        </Link>
-      </Box>
-      <Box align="center" justify="center" fill gap="medium">
         <Link to="/dentals" style={linkStyle}>
           <DashboardCard 
             title="Dental Record" 
             image={<FontAwesomeIcon icon={faTooth} size='6x' />} 
           />
         </Link>
-        <Link to="/info" style={linkStyle}>
+      </Box>
+      <Box align="center" justify="center" fill gap="medium">
+        <Link to="/anaesthetic" style={linkStyle}>
           <DashboardCard 
-            title="System Information" 
-            image={<FontAwesomeIcon icon={faInfoCircle} size='6x' />} 
+            title="Anaesthetic Monitoring" 
+            image={<FontAwesomeIcon icon={faHeartPulse} size='6x' />} 
+          />
+        </Link>
+        <Link to="/drugs" style={linkStyle}>
+          <DashboardCard 
+            title="Drug Record" 
+            image={<FontAwesomeIcon icon={faPills} size='6x' />} 
+          />
+        </Link>
+      </Box>
+      <Box align="center" justify="center" fill gap="medium">
+        <Link to="/cremations" style={linkStyle}>
+          <DashboardCard 
+             title="Cremations" 
+             image={<FontAwesomeIcon icon={faCross} size='6x' />} 
+          />
+        </Link>
+        <Link to="/xrays" style={linkStyle}>
+          <DashboardCard 
+            title="X-Ray Exposure" 
+            image={<FontAwesomeIcon icon={faRadiation} size='6x' />} 
           />
         </Link>
       </Box>
