@@ -57,7 +57,7 @@ Ensure you have all the installation requirements above before continuing with t
 <b>Nurse account</b>
 
 - Username: nurse.user
-- Password: vet.user
+- Password: ChorD@t@1
 
 ## How to use the deployed version?
 
